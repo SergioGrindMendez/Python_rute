@@ -1,14 +1,13 @@
 def conversor(tipo_pesos, valor_dolar):
-    pesos = input("cuantos pinches y devaluados pesos mexicanos tienes?: " + tipo_pesos )
+    pesos = input("¿Cuántos pinches y devaluados " + tipo_pesos + " tienes?: ")
     pesos = float(pesos)
-    valor_dolar = 21
     dolares = pesos / valor_dolar
-    dolares = round(dolares, 3)
+    dolares = round(dolares, 2)
     dolares = str(dolares)
-    print("Tienes $ " + dolares + " pesos" )
+    print("Tienes $ " + dolares + " Dolares" )
 
 menu = """
-Bienvenidos al coversor de MXN a monedas de latam 👻
+Bienvenidos al coversor de monedas de latam 👻
 
 Elige una
 
@@ -20,12 +19,12 @@ opcion: """
 
 opcion = int(input(menu))
 if opcion == 1:
-    conversor( 28000)
+    conversor("Pesos Colombianos", 28000)
 
 elif opcion == 2:
-    conversor( 23305)
+    conversor("Pesos Argentinos", 23305)
 
 elif opcion == 3:
-    conversor( 20)
+    conversor("pesos Chilenos", 20345)
 else:
     print("Ingresa una opcion correcta, no mms")
