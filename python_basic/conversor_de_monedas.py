@@ -4,7 +4,8 @@ def conversor(tipo_pesos, valor_dolar):
     dolares = pesos / valor_dolar
     dolares = round(dolares, 2)
     dolares = str(dolares)
-    print("Tienes $ " + dolares + " Dolares" )
+    print("Tienes $ " + dolares + " Dolares")
+
 
 menu = """
 Bienvenidos al coversor de monedas de latam 👻
